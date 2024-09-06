@@ -6,7 +6,7 @@ sealed class Result {
     data class Error(val message: String) : Result()
     object Loading: Result()
 }
-
+// https://habr.com/ru/articles/752450/
 // конструктор - private всегда
 // у него могуть быть наследники, но они должны быть в одном пакете
 fun proccessResult(result: Result) {
